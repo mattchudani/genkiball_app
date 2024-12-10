@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Ala Wai</title>
+
+    <link rel="stylesheet" href="./style/styleMap.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 960px)"
+      href="./style/mobileMap.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./map.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div id="home">
+      <div id="header">
+        <div class="hone">
+          <a id="account" href="./account">
+            <span class="material-symbols-outlined">account_circle</span>
+            <h3 id="user">{{username}}</h3>
+          </a>
+          <a id="sign" href="./login">Login</a>
+          <a id="join" href="./sign">Join!</a>
+          <img
+            src="https://cdn.glitch.global/801f6764-b7d7-4264-aeb7-369efceadd71/Genki-Project.png?v=1727664986473"
+            id="img-home"
+            href="./index.html"
+          />
+        </div>
+      </div>
+      <div id="map-container">
+        <button
+          class="map-button"
+          id="change-map"
+          type="button"
+          onclick="changemap()"
+        >
+          Change Map
+        </button>
+        <iframe
+          id="map"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          title="Streams and Conduits"
+          src="https://www.arcgis.com/apps/Embed/index.html?webmap=039cda4f2a724d68a9d170a19c0ec949&extent=-157.8472,21.2731,-157.8051,21.2939&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=true&theme=light"
+        ></iframe>
+      </div>
+      <div id="footer" class="hone">
+        <a class="link-f" href="/leaderboard-points">
+          <span class="material-symbols-outlined"> leaderboard </span>
+          Leaderboard
+        </a>
+        <a class="link-f" href="/map">
+          <span class="material-symbols-outlined"> explore </span>
+          Explore
+        </a>
+        <a class="link-f" href="/home">
+          <span class="material-symbols-outlined"> Home </span>
+          Home
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

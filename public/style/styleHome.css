@@ -1,0 +1,203 @@
+body {
+  margin: 0%;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#home {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-areas:
+    "f m h h"
+    "f m m m"
+    "f m m m";
+}
+#header {
+  grid-area: h;
+  display: inline;
+  height: 10vh;
+  pointer-events: none;
+  /**
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; **/
+}
+.hone {
+  width: 100%;
+  align-content: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+.link-f {
+  width: minmax(200px,10vw);
+  color: #fefcfb;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  margin: 1%;
+  align-self: center;
+  padding: 1vw;
+  border-radius: 15px;
+}
+.link-f span {
+  display: inline-block;
+  margin-right: auto;
+}
+.link:hover,
+.link-f:hover {
+  background-color: #004ca8;
+}
+#main {
+  position: absolute;
+  left: 13vw;
+  background-color: #ffffff;
+  grid-area: m;
+  height: 100vh;
+  width: 87vw;
+  overflow-y: scroll;
+}
+#footer {
+  grid-area: f;
+  display: grid;
+  align-content: start;
+  grid-template-rows: repeat(3, fit-content);
+  grid-template-columns: 13vw;
+  width: 13vw;
+  height: 100vh;
+  background-color: #004199;
+  position: absolute;
+  left: 0%;
+  pointer-events: fill; /* SVG-only */
+}
+h2 {
+  padding: 10px;
+  margin-left: 15px;
+}
+.home {
+  display: block;
+  margin: auto auto;
+  width: 100%;
+  height: 75%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/66/AlaWai2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#img-logo {
+  display: block;
+  margin: auto auto;
+  width: 175px;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  top: 2vh;
+}
+h1 {
+  display: block;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  text-align: center;
+  color: rgb(52, 52, 52);
+  background-color: #ffffff;
+}
+p {
+  display: block;
+  margin: auto;
+  margin-top: 3vh;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  color: rgb(52, 52, 52);
+  background-color: #ffffff;
+}
+hr {
+  color: white;
+  width: 51%;
+  text-align: center;
+  height: 2px;
+  border: white solid 0px;
+  background-color: white;
+}
+#join {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+}
+#site {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+}
+#join h1 {
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  font-size: 2.5vw;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  text-align: center;
+  color: #205fb1;
+}
+#site h1 {
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  font-size: 2.5vw;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  text-align: center;
+  color: #434547;
+}
+#join a {
+  color: #434547;
+  text-decoration: none;
+  text-align: center;
+}
+#join hr {
+  background-color: #434547;
+}
+#map {
+  width: 100%;
+  height: 70%;
+  background-color: #0250bc;
+  padding-bottom: 3vh;
+}
+#map h1 {
+  margin-top: 5vh;
+  background-color: #0250bc;
+  color: white;
+}
+.column1 {
+  width: 50%;
+  float: left;
+}
+.column2 {
+  width: 49%;
+  float: left;
+  border-left: #4674b3 solid 3px;
+}
+.map {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 40vh;
+}
+.column1 h2, .column2 h2 {
+  color: white;
+  text-align: center;
+}
+ol,ul {
+  display: block;
+  margin: auto;
+  width: 50%;
+  font-size: 20px;
+}

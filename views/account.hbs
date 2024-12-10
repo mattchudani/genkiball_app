@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Ala Wai</title>
+
+    <link rel="stylesheet" href="./style/styleMap.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 960px)"
+      href="./style/mobileMap.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./map.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div id="home">
+      <div id="header">
+        <div class="hone">
+          <a id="account" href="./account">
+            <span class="material-symbols-outlined">account_circle</span>
+            <h3 id="user">{{username}}</h3>
+          </a>
+          <a id="sign" href="./login">Login</a>
+          <a id="join" href="./sign">Join!</a>
+        </div>
+      </div>
+      <div id="account-container">
+        <img
+          src="https://cdn.glitch.global/801f6764-b7d7-4264-aeb7-369efceadd71/Genki-Project.png?v=1727664986473"
+          id="img-logo"
+        />
+        <div id="info">
+          <h2>@{{username}}</h2>
+          <a class="lfo" href="/leaderboard-points">
+            <h3>Leaderboard:</h3>
+            <p>{{position}}</p>
+          </a>
+          <a class="lfo" href="/leaderboard-points">
+            <h3>Genki Balls Made:</h3>
+            <p>{{genki}}</p>
+          </a>
+          <a class="lfo" href="/genki">
+            <h3>Get Started Here!</h3>
+            <p></p>
+          </a>
+          <hr>
+          <h2>Overview</h2>
+          <div id="points">
+            <div class="points">
+              <h3>Total Points:</h3>
+              <p>{{points}}</p>
+            </div>
+            <a class="point" href="/ala-wai">
+              <h3>Ala Wai:</h3>
+              <p>{{alaa}}</p>
+            </a>
+            <a class="point" href="/salt-lake">
+              <h3>Salt Lake:</h3>
+              <p>{{salts}}</p>
+            </a>
+            <a class="point" href="/waipahu">
+              <h3>Waipahu:</h3>
+              <p>{{waipahu}}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="hone">
+        <a class="link-f" href="/leaderboard-points">
+          <span class="material-symbols-outlined"> leaderboard </span>
+          Leaderboard
+        </a>
+        <a class="link-f" href="/map">
+          <span class="material-symbols-outlined"> explore </span>
+          Explore
+        </a>
+        <a class="link-f" href="/home">
+          <span class="material-symbols-outlined"> Home </span>
+          Home
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

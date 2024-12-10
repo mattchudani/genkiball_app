@@ -1,0 +1,146 @@
+body {
+  margin: 0%;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#home {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-areas:
+    "f m h h"
+    "f m m m"
+    "f m m m";
+}
+#header {
+  grid-area: h;
+  display: inline;
+  height: 10vh;
+  /**
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; **/
+}
+.hone {
+  width: 100%;
+  align-content: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.link {
+  display: block;
+  color: #fefcfb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 2vh;
+  width: min-content;
+  align-self: center;
+  padding: 10px;
+}
+.link-f {
+  color: #fefcfb;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  margin: 1%;
+  align-self: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+.link-f span {
+  display: block;
+  margin-right: auto;
+}
+#img-home {
+  padding: 1.5vh;
+  width: 10%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  z-index: 7;
+}
+#sign {
+  left: 64vw;
+  color: #212529;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2vh;
+  margin-right: 10px;
+  margin-top: 2.5vh;
+  align-self: center;
+  padding: 1vh;
+  width: fit-content;
+  float: right;
+  background-color: #f7f8f8;
+  border-left: #c2c2c2 solid 2px;
+}
+#join {
+  color: #212529;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2vh;
+  margin-top: 2.5vh;
+  align-self: center;
+  padding: 1vh;
+  margin-left: 30%;
+  width: fit-content;
+  float: right;
+  background-color: #f7f8f8;
+}
+#sign:hover, #join:hover {
+  background-color: #d6ebff;
+}
+.link:hover,
+.link-f:hover {
+  background-color: #353a40;
+}
+.hone div {
+  width: max-content;
+}
+#map-container {
+  position: absolute;
+  left: 10vw;
+  background-color: #343a40;
+  grid-area: m;
+  height: 100vh;
+  width: 100vw;
+}
+.map-button {
+  height: 32px;
+  font-family: "Roboto Mono", monospace;
+  color: #4c4c4c;
+  background-color: #f7f8f8;
+  border-style: none;
+  border-radius: 0px;
+  border-color: #f7f8f8;
+}
+.map-button:hover {
+  background-color: #d6ebff;
+}
+#change-map {
+  position: absolute;
+  margin: 10px;
+  top: 10vh;
+  right: 10vw;
+  z-index: 6;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
+#footer {
+  grid-area: f;
+  display: grid;
+  align-content: start;
+  grid-template-rows: repeat(5, fit-content);
+  grid-template-columns: 10vw;
+  width: 10vw;
+  height: 100vh;
+  background-color: #004199;
+  position: absolute;
+  left: 0%;
+}
