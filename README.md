@@ -33,3 +33,13 @@ In a future version of our app, we would like to:
 - Introduce a sign-up or scheduling feature to facilitate group activities, such as making and deploying Genki balls in the Ala Wai or other locations.
 - Consider replacing SQLite with a more suitable database solution.
 - Explore the possibility of porting the app to mobile platforms.
+
+### Built With
+
+Our app was made with the following programming languages:
+
+* HTML
+* CSS
+* JS
+* NODEJS
+* SQLITE
