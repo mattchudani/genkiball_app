@@ -1,4 +1,16 @@
-# Environmental Awareness App
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/mattchudani/genkiball_app">
+    <img src="https://github.com/user-attachments/assets/b73bd597-8477-4ad9-80af-732618fc69f1" alt="Logo" height="200">
+  </a>
+
+  <h1 align="center">Genki Project App</h1>
+
+  <p align="center">
+    An environmental awareness app that is participating in the Congressional App Challenge!
+    <br />
+</div>
 
 ## Description
 
